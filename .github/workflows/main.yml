@@ -27,4 +27,3 @@ jobs:
           browser: chrome
           headed: true
           build: yarn build
-          start: yarn start
