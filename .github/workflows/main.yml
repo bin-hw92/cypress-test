@@ -17,12 +17,13 @@ jobs:
         with:
           node-version: '16'
           cache: 'yarn'
-          
+
       - name: Install dependencies
         run: yarn install
 
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
+          browser: chrome
           build: yarn build
           start: yarn start
