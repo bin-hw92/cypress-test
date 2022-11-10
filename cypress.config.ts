@@ -12,7 +12,7 @@ export default defineConfig({
     experimentalSingleTabRunMode: false,
   },
   e2e: {
-    baseUrl: 'http://localhost:3000/',
+    baseUrl: 'https://multifamily-admin-dev.h2ohospitality.io/',
     experimentalSessionAndOrigin: true,
   },
   viewportWidth: 1320,
