@@ -9,16 +9,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Use Node.js
-        uses: actions/setup-node@v2
+      - name: Cache node modules
+        uses: actions/cache@v1
         with:
-          node-version: '16'
-          cache: 'yarn'
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-build-
+            ${{ runner.OS }}-
 
       - name: Install dependencies
         run: yarn install
 
       - name: Cypress run
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v1
         with:
           build: yarn build
