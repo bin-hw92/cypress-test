@@ -1,0 +1,96 @@
+/* @import "~bootstrap/scss/bootstrap"; */
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+
+html, body, #root {
+  font-family:'NanumSquare', sans-serif !important;
+  background-color: #fefefe;
+  height: 100%;
+  margin: 0px;
+}
+
+textarea:disabled {
+  opacity: 0.7;
+}
+
+/* display */
+.d-flex { display: flex; }
+
+/* position */
+.r-2rem { right: 2rem !important; }
+
+/* width */
+.w-70p { width: 70%; }
+.w-100p { width: 100%; }
+
+/* margin */
+.m-0 { margin: 0 !important; }
+.mt-0 { margin-top: 0 !important; }
+.mb-16 { margin-bottom: 16px !important; }
+.mr-10 { margin-right: 10px; }
+.mr-20 { margin-right: 20px; }
+.ml-5 { margin-left: 5px; }
+.ml-10 { margin-left: 10px; }
+.ml-20 { margin-left: 20px; }
+
+/* padding */
+.pt-20 { padding-top: 20px !important; }
+
+/* backgruound */
+.bgc-unset { background-color: unset !important; }
+
+/* border */
+.btlr-0 { border-top-left-radius: 0 !important; }
+.bblr-35 { border-bottom-left-radius: .35rem; }
+.bbrr-35 { border-bottom-right-radius: .35rem; }
+.bb-unset { border-bottom: unset !important; }
+.bl-1-dashed-gray { border-left: 1px dashed rgba(255, 255, 255, 0.22); }
+.bsd-unset { box-shadow: unset !important; }
+
+/* font */
+.c-gray { color: #adb0bb; }
+
+/* cursor */
+.c-pointer { cursor: pointer; }
+
+/* table */
+.link-detail {
+  cursor: pointer;
+  /* color: #4c9ffe; */
+  color: rgb(59, 125, 221);
+  font-weight: 700;
+}
+.link-detail:hover {
+  /* font-weight: bold; */
+  /* color: #76b6ff; */
+  color: #4c9ffe;
+  border-bottom: 1px solid #4c9ffe;
+}
+.wrap-overlay {
+  position: relative;
+}
+.wrap-overlay.w-70 {
+  width: 70px;
+}
+
+.text-center {
+  text-align: center !important; 
+}
+.m-3 {
+  margin: 1rem 
+}
+.mb-0 {
+  margin-bottom: 0 !important; 
+}
+.mb-4 {
+  margin-bottom: 1.5rem !important; 
+}
+.mt-0 { margin-top: 0 !important; 
+}
+.mt-3,
+.my-3 {
+  margin-top: 1rem !important; 
+}
+.mt-4,
+.my-4 {
+  margin-top: 1.5rem !important; 
+}
