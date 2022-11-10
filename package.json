@@ -58,7 +58,8 @@
     "sync-assets": "rsync -avzh --delete ./src/assets/ ./public/assets/",
     "watch-assets": "chokidar \"src/assets\" -c \"npm run sync-assets\"",
     "e2e": "cypress run",
-    "e2e-open": "cypress open"
+    "e2e-open": "cypress open",
+    "test" : "cypress run"
   },
   "eslintConfig": {
     "extends": [
