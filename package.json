@@ -57,9 +57,9 @@
     "start-prod": "npm run prod && npm-run-all -p sync-assets watch-assets start",
     "sync-assets": "rsync -avzh --delete ./src/assets/ ./public/assets/",
     "watch-assets": "chokidar \"src/assets\" -c \"npm run sync-assets\"",
-    "e2e": "cypress run",
+    "e2e": "cypress run --config baseUrl=http://localhost:3000/",
     "e2e-open": "cypress open",
-    "test" : "cypress run"
+    "e2e-test" : "cypress run"
   },
   "eslintConfig": {
     "extends": [

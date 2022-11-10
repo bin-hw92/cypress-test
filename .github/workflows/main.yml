@@ -25,4 +25,4 @@ jobs:
         run: yarn build
 
       - name: Cypress run
-        run: yarn e2e
+        run: yarn e2e-test

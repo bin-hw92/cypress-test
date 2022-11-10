@@ -14,6 +14,7 @@ export default defineConfig({
   e2e: {
     baseUrl: 'https://multifamily-admin-dev.h2ohospitality.io/',
     experimentalSessionAndOrigin: true,
+    video: false,
   },
   viewportWidth: 1320,
   viewportHeight: 820,
