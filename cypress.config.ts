@@ -12,6 +12,7 @@ export default defineConfig({
     experimentalSingleTabRunMode: false,
   },
   e2e: {
+    baseUrl: 'http://localhost:3000/',
     experimentalSessionAndOrigin: true,
   },
   viewportWidth: 1320,
