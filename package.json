@@ -55,7 +55,7 @@
     "start-dev": "npm run dev && npm-run-all -p sync-assets watch-assets start",
     "start-staging": "npm run staging && npm-run-all -p sync-assets watch-assets start",
     "start-prod": "npm run prod && npm-run-all -p sync-assets watch-assets start",
-    "sync-assets": "robocopy ./src/assets/ ./public/assets/ /E /MIR",
+    "sync-assets": "rsync -avzh --delete ./src/assets/ ./public/assets/",
     "watch-assets": "chokidar \"src/assets\" -c \"npm run sync-assets\"",
     "e2e": "cypress run",
     "e2e-open": "cypress open"
