@@ -22,7 +22,7 @@ jobs:
         run: yarn install
 
       - name: cypress Install dependencies
-        run: cypress install
+        run: yarn cypress install
 
       - name: build dependencies
         run: yarn build
